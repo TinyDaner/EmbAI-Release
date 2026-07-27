@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-label="Robot terminal icon">
+  <defs>
+    <style>
+      .screen { fill: #0c0c0e; }
+      .frame { fill: #f4f4f5; }
+      .ring { fill: #e0e0e2; }
+      .connector { fill: #c9c9ce; }
+      .connector-stroke { stroke: #c9c9ce; }
+      .connector-fill { fill: #c9c9ce; }
+      .blue { fill: #2f88ff; }
+      .corner { stroke: #8e8e93; }
+      .mouth { stroke: #e8e8e8; }
+      .mouth-fill { fill: #e8e8e8; }
+      .mouth-gray { stroke: #9ea0a8; }
+      .mouth-gray-fill { fill: #9ea0a8; }
+      .stroke-round { fill: none; stroke-width: 11; stroke-linecap: round; stroke-linejoin: round; }
+    </style>
+  </defs>
+
+  <!-- Connector is intentionally behind the circular antenna. -->
+  <rect class="connector" x="247" y="86" width="18" height="48" rx="9"/>
+  <rect class="connector" x="224" y="112" width="64" height="34" rx="10"/>
+
+  <rect class="frame" x="84" y="128" width="344" height="316" rx="68"/>
+  <rect class="screen" x="116" y="160" width="280" height="252" rx="48"/>
+
+  <circle class="blue" cx="208" cy="252" r="30"/>
+  <circle class="blue" cx="304" cy="252" r="30"/>
+
+  <path class="connector-stroke" d="M207 317 L234 340 L207 363" fill="none" stroke-width="15" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect class="connector-fill" x="254" y="351" width="55" height="14" rx="7"/>
+
+  <circle class="ring" cx="256" cy="68" r="36"/>
+  <circle class="screen" cx="256" cy="68" r="23"/>
+  <circle class="blue" cx="256" cy="68" r="14"/>
+</svg>

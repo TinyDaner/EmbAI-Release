@@ -1,0 +1,3722 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="AI 驱动的嵌入式固件开发平台">
+      
+      
+      
+        <link rel="canonical" href="https://tinydaner.github.io/EmbAI-Release/changelog/">
+      
+      
+        <link rel="prev" href="../guide/account/">
+      
+      
+      
+        
+          <link rel="alternate" href="/EmbAI-Release/" hreflang="zh">
+        
+          <link rel="alternate" href="/EmbAI-Release/en/" hreflang="en">
+        
+      
+      
+      <link rel="icon" href="../logo/EmbAI_bg.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>更新日志 - EmbAI 文档</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/embai.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="custom">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#changelog" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href=".." title="EmbAI 文档" class="md-header__button md-logo" aria-label="EmbAI 文档" data-md-component="logo">
+      
+  <img src="../logo/EmbAI_bg.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            EmbAI 文档
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              更新日志
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="切换到浅色模式"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="切换到浅色模式" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="切换到深色模式"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="切换到深色模式" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+      <div class="md-header__option">
+  <div class="md-select">
+    
+    <button class="md-header__button md-icon" aria-label="选择当前语言">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.5 17.5 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2zm-2.62 7 1.62-4.33L19.12 17z"/></svg>
+    </button>
+    <div class="md-select__inner">
+      <ul class="md-select__list">
+        
+          <li class="md-select__item">
+            <a href="/EmbAI-Release/" hreflang="zh" class="md-select__link">
+              简体中文
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="/EmbAI-Release/en/" hreflang="en" class="md-select__link">
+              English
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/TinyDaner/EmbAI-Release" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="EmbAI 文档" class="md-nav__button md-logo" aria-label="EmbAI 文档" data-md-component="logo">
+      
+  <img src="../logo/EmbAI_bg.svg" alt="logo">
+
+    </a>
+    EmbAI 文档
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/TinyDaner/EmbAI-Release" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    首页
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../QUICKSTART/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    快速上手
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../INSTALLATION/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    安装与环境
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    使用指南
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    使用指南
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../USER_GUIDE/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    概览
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guide/project/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    工程管理
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guide/editor/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    编辑器
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guide/build-flash/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    编译与烧录
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guide/debug/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    调试
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guide/serial/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    串口与超级串口
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guide/ai/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AI 助手
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guide/virtual-display/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    虚拟显示屏
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guide/schematic/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    原理图与知识库
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guide/account/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    账户与积分
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    更新日志
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    更新日志
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#v0182-2026-07-27" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        v0.1.82 (2026-07-27)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="v0.1.82 (2026-07-27)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#features" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Features
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fixes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixes
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v0181-2026-07-25" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        v0.1.81 (2026-07-25)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="v0.1.81 (2026-07-25)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixes_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixes
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v0180-2026-07-25" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        v0.1.80 (2026-07-25)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="v0.1.80 (2026-07-25)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixes_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixes
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v0179-2026-07-24" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        v0.1.79 (2026-07-24)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="v0.1.79 (2026-07-24)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixes_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixes
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v0178-2026-07-24" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        v0.1.78 (2026-07-24)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="v0.1.78 (2026-07-24)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixes_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixes
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v0177-2026-07-24" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        v0.1.77 (2026-07-24)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="v0.1.77 (2026-07-24)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#features_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Features
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v0175-2026-07-23" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        v0.1.75 (2026-07-23)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="v0.1.75 (2026-07-23)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixes_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixes
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v0174-2026-07-22" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        v0.1.74 (2026-07-22)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="v0.1.74 (2026-07-22)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixes_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixes
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v0173-2026-07-21" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        v0.1.73 (2026-07-21)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="v0.1.73 (2026-07-21)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixes_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixes
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v0172-2026-07-21" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        v0.1.72 (2026-07-21)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="v0.1.72 (2026-07-21)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixes_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixes
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v0171-2026-07-21" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        v0.1.71 (2026-07-21)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="v0.1.71 (2026-07-21)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixes_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixes
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v0170-2026-07-21" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        v0.1.70 (2026-07-21)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="v0.1.70 (2026-07-21)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#features_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Features
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fixes_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixes
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v0169-2026-07-19" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        v0.1.69 (2026-07-19)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="v0.1.69 (2026-07-19)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#features_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Features
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v0168-2026-07-15" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        v0.1.68 (2026-07-15)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="v0.1.68 (2026-07-15)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#features_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Features
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v0167-2026-07-15" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        v0.1.67 (2026-07-15)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="v0.1.67 (2026-07-15)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#performance" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Performance
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fixes_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixes
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v0166-2026-07-15" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        v0.1.66 (2026-07-15)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="v0.1.66 (2026-07-15)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixes_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixes
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v0165-2026-07-15" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        v0.1.65 (2026-07-15)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="v0.1.65 (2026-07-15)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#features_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Features
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#changes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Changes
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v0164-2026-07-15" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        v0.1.64 (2026-07-15)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="v0.1.64 (2026-07-15)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixes_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixes
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v0163-2026-07-15" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        v0.1.63 (2026-07-15)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="v0.1.63 (2026-07-15)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#features_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Features
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fixes_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixes
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v0162-2026-07-15" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        v0.1.62 (2026-07-15)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="v0.1.62 (2026-07-15)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixes_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixes
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v0161-2026-07-15" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        v0.1.61 (2026-07-15)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="v0.1.61 (2026-07-15)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#features_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Features
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v0160-2026-07-15" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        v0.1.60 (2026-07-15)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="v0.1.60 (2026-07-15)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixes_16" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixes
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v0159-2026-07-14" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        v0.1.59 (2026-07-14)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="v0.1.59 (2026-07-14)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixes_17" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixes
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v0158-2026-07-14" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        v0.1.58 (2026-07-14)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="v0.1.58 (2026-07-14)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixes_18" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixes
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v0157-2026-07-14" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        v0.1.57 (2026-07-14)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="v0.1.57 (2026-07-14)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#features_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Features
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fixes_19" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixes
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v0156-2026-07-14" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        v0.1.56 (2026-07-14)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="v0.1.56 (2026-07-14)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#features_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Features
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fixes_20" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixes
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v0155-2026-07-13" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        v0.1.55 (2026-07-13)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="v0.1.55 (2026-07-13)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#features_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Features
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#changes_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Changes
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v0150-2026-07-09" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        v0.1.50 (2026-07-09)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="v0.1.50 (2026-07-09)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#features_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Features
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fixes_21" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixes
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#changes_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Changes
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v0149-2026-07-08" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        v0.1.49 (2026-07-08)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="v0.1.49 (2026-07-08)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#changes_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Changes
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v0148-2026-07-08" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        v0.1.48 (2026-07-08)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="v0.1.48 (2026-07-08)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#features_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Features
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v0147-2026-07-08" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        v0.1.47 (2026-07-08)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="v0.1.47 (2026-07-08)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#features_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Features
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v0146-2026-07-07" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        v0.1.46 (2026-07-07)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="v0.1.46 (2026-07-07)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixes_22" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixes
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v0145-2026-07-07" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        v0.1.45 (2026-07-07)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="v0.1.45 (2026-07-07)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#features_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Features
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fixes_23" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixes
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v0144-2026-07-07" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        v0.1.44 (2026-07-07)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="v0.1.44 (2026-07-07)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#features_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Features
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fixes_24" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixes
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v0143-2026-07-07" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        v0.1.43 (2026-07-07)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="v0.1.43 (2026-07-07)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixes_25" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixes
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v0142-2026-07-06" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        v0.1.42 (2026-07-06)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="v0.1.42 (2026-07-06)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#changes_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Changes
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v0141-2026-07-06" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        v0.1.41 (2026-07-06)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="v0.1.41 (2026-07-06)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixes_26" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixes
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v0140-2026-07-06" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        v0.1.40 (2026-07-06)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="v0.1.40 (2026-07-06)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixes_27" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixes
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v0139-2026-07-06" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        v0.1.39 (2026-07-06)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="v0.1.39 (2026-07-06)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#features_16" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Features
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v010-2026-04-08" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        v0.1.0 (2026-04-08)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="v0.1.0 (2026-04-08)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#features_17" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Features
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#v0182-2026-07-27" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        v0.1.82 (2026-07-27)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="v0.1.82 (2026-07-27)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#features" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Features
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fixes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixes
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v0181-2026-07-25" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        v0.1.81 (2026-07-25)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="v0.1.81 (2026-07-25)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixes_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixes
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v0180-2026-07-25" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        v0.1.80 (2026-07-25)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="v0.1.80 (2026-07-25)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixes_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixes
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v0179-2026-07-24" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        v0.1.79 (2026-07-24)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="v0.1.79 (2026-07-24)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixes_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixes
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v0178-2026-07-24" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        v0.1.78 (2026-07-24)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="v0.1.78 (2026-07-24)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixes_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixes
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v0177-2026-07-24" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        v0.1.77 (2026-07-24)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="v0.1.77 (2026-07-24)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#features_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Features
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v0175-2026-07-23" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        v0.1.75 (2026-07-23)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="v0.1.75 (2026-07-23)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixes_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixes
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v0174-2026-07-22" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        v0.1.74 (2026-07-22)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="v0.1.74 (2026-07-22)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixes_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixes
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v0173-2026-07-21" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        v0.1.73 (2026-07-21)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="v0.1.73 (2026-07-21)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixes_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixes
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v0172-2026-07-21" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        v0.1.72 (2026-07-21)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="v0.1.72 (2026-07-21)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixes_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixes
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v0171-2026-07-21" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        v0.1.71 (2026-07-21)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="v0.1.71 (2026-07-21)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixes_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixes
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v0170-2026-07-21" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        v0.1.70 (2026-07-21)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="v0.1.70 (2026-07-21)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#features_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Features
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fixes_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixes
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v0169-2026-07-19" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        v0.1.69 (2026-07-19)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="v0.1.69 (2026-07-19)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#features_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Features
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v0168-2026-07-15" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        v0.1.68 (2026-07-15)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="v0.1.68 (2026-07-15)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#features_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Features
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v0167-2026-07-15" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        v0.1.67 (2026-07-15)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="v0.1.67 (2026-07-15)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#performance" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Performance
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fixes_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixes
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v0166-2026-07-15" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        v0.1.66 (2026-07-15)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="v0.1.66 (2026-07-15)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixes_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixes
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v0165-2026-07-15" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        v0.1.65 (2026-07-15)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="v0.1.65 (2026-07-15)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#features_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Features
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#changes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Changes
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v0164-2026-07-15" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        v0.1.64 (2026-07-15)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="v0.1.64 (2026-07-15)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixes_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixes
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v0163-2026-07-15" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        v0.1.63 (2026-07-15)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="v0.1.63 (2026-07-15)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#features_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Features
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fixes_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixes
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v0162-2026-07-15" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        v0.1.62 (2026-07-15)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="v0.1.62 (2026-07-15)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixes_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixes
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v0161-2026-07-15" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        v0.1.61 (2026-07-15)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="v0.1.61 (2026-07-15)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#features_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Features
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v0160-2026-07-15" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        v0.1.60 (2026-07-15)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="v0.1.60 (2026-07-15)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixes_16" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixes
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v0159-2026-07-14" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        v0.1.59 (2026-07-14)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="v0.1.59 (2026-07-14)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixes_17" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixes
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v0158-2026-07-14" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        v0.1.58 (2026-07-14)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="v0.1.58 (2026-07-14)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixes_18" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixes
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v0157-2026-07-14" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        v0.1.57 (2026-07-14)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="v0.1.57 (2026-07-14)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#features_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Features
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fixes_19" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixes
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v0156-2026-07-14" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        v0.1.56 (2026-07-14)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="v0.1.56 (2026-07-14)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#features_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Features
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fixes_20" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixes
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v0155-2026-07-13" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        v0.1.55 (2026-07-13)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="v0.1.55 (2026-07-13)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#features_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Features
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#changes_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Changes
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v0150-2026-07-09" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        v0.1.50 (2026-07-09)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="v0.1.50 (2026-07-09)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#features_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Features
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fixes_21" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixes
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#changes_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Changes
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v0149-2026-07-08" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        v0.1.49 (2026-07-08)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="v0.1.49 (2026-07-08)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#changes_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Changes
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v0148-2026-07-08" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        v0.1.48 (2026-07-08)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="v0.1.48 (2026-07-08)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#features_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Features
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v0147-2026-07-08" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        v0.1.47 (2026-07-08)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="v0.1.47 (2026-07-08)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#features_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Features
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v0146-2026-07-07" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        v0.1.46 (2026-07-07)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="v0.1.46 (2026-07-07)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixes_22" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixes
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v0145-2026-07-07" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        v0.1.45 (2026-07-07)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="v0.1.45 (2026-07-07)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#features_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Features
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fixes_23" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixes
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v0144-2026-07-07" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        v0.1.44 (2026-07-07)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="v0.1.44 (2026-07-07)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#features_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Features
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fixes_24" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixes
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v0143-2026-07-07" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        v0.1.43 (2026-07-07)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="v0.1.43 (2026-07-07)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixes_25" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixes
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v0142-2026-07-06" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        v0.1.42 (2026-07-06)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="v0.1.42 (2026-07-06)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#changes_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Changes
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v0141-2026-07-06" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        v0.1.41 (2026-07-06)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="v0.1.41 (2026-07-06)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixes_26" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixes
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v0140-2026-07-06" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        v0.1.40 (2026-07-06)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="v0.1.40 (2026-07-06)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixes_27" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixes
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v0139-2026-07-06" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        v0.1.39 (2026-07-06)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="v0.1.39 (2026-07-06)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#features_16" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Features
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v010-2026-04-08" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        v0.1.0 (2026-04-08)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="v0.1.0 (2026-04-08)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#features_17" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Features
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="changelog">Changelog<a class="headerlink" href="#changelog" title="Permanent link">&para;</a></h1>
+<h2 id="v0182-2026-07-27">v0.1.82 (2026-07-27)<a class="headerlink" href="#v0182-2026-07-27" title="Permanent link">&para;</a></h2>
+<h3 id="features">Features<a class="headerlink" href="#features" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>文档站重做，并新增英文版</strong>：此前发布的 8 篇文档是初版时写的，之后三个多月一直没跟着产品走 —— 里面写的是「用 CMake + Ninja + arm-gcc 编译、跨 Windows/macOS/Linux、克隆源码自己跑、本地填 API Key」，而实际上 EmbAI 是 Windows 桌面应用、固件只由 Keil MDK 编译、装的是安装包、走云端账户。另外还有一批代码里根本不存在的东西（<code>EMBAI_PORT</code> 环境变量、<code>~/.embai/settings.json</code>、六个不存在的 AI 工具名、三个不存在的脚本），以及互相矛盾的接口路径。现在全部按代码重写：新增按功能分的九章使用指南（工程管理 / 编辑器 / 编译与烧录 / 调试 / 串口与超级串口 / AI 助手 / 虚拟显示屏 / 原理图与知识库 / 账户与积分），中文在原地址、英文在 <code>/en/</code>，站内可切换语言；配色与 logo 对齐 EmbAI 品牌。面向维护者的架构说明、开发指南与 API 参考已下架（内容早已失真，对使用者也没有价值），「帮助与反馈」面板里的文档卡片同步换成新的分章入口。</li>
+</ul>
+<h3 id="fixes">Fixes<a class="headerlink" href="#fixes" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>修复「附加截图」截到的是反馈面板自己</strong>：截图取的是整个窗口，而此时「帮助与反馈」正以浮层盖在最上面（还带一层压暗遮罩），结果每张附图都是反馈面板 + 一片压暗的背景，用户真正想让人看的 AI 助手或编辑器状态全被挡住。现在截图瞬间会先把面板隐藏、截完立刻恢复，且已经写好的正文、勾选状态与诊断信息一个不丢。</li>
+<li><strong>讲清楚 GitHub 那条路是「预填」不是「提交」</strong>：按钮原来写着「或到 GitHub 提 Issue」，紧挨着上面那个真会自动发出去的「提交反馈」，看起来是同一类动作；但 GitHub 不允许由应用代提 issue，这条路只能在浏览器里打开一个<strong>已经填好内容</strong>的表单，最后仍需你自己点 Submit。现在按钮文案与点击后的提示都说明了这一点。</li>
+<li><strong>修复正文较长时点 GitHub 毫无反应</strong>：预填链接的长度上限原来按字数算，但中文在 URL 里要按 UTF-8 编码，一个汉字占 9 个字符 —— 1200 字的正文会生成 11,431 字符的链接，远超系统上限，浏览器根本不会打开，界面上也没有任何提示。现在按链接的实际长度截断（约 145 汉字以内不受影响），超长时只预填开头并提示完整内容仍在输入框里；打开失败也会明确报错，不再静默。</li>
+<li><strong>截图失败时给出提示</strong>：此前截图出错既不显示原因也不留痕迹，点了像是什么都没发生。</li>
+</ul>
+<h2 id="v0181-2026-07-25">v0.1.81 (2026-07-25)<a class="headerlink" href="#v0181-2026-07-25" title="Permanent link">&para;</a></h2>
+<h3 id="fixes_1">Fixes<a class="headerlink" href="#fixes_1" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>「帮助与反馈」从界面原型变成真功能</strong>：此前面板里 12 个链接全是占位死链、视频教程的时长与播放量是编造的、「附加截图」只是个不传任何东西的开关，而<strong>点「提交反馈」只会显示「提交成功」，内容根本没有发出去</strong>。现在快速入门与文档链接指向真实的在线文档站；反馈会真正提交到云端并可在服务端查看，失败时给出具体原因并可改用 GitHub 提 Issue（不再假装成功）；「附加截图」会真的截取当前界面随反馈一起提交；提交前会先展示将附带的版本 / 系统 / 后端日志尾部，日志可自行选择不带。视频教程与 Discord 两个不存在的入口已移除。</li>
+</ul>
+<h2 id="v0180-2026-07-25">v0.1.80 (2026-07-25)<a class="headerlink" href="#v0180-2026-07-25" title="Permanent link">&para;</a></h2>
+<h3 id="fixes_2">Fixes<a class="headerlink" href="#fixes_2" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>修复 AI「委托探索」子任务的能力边界与超时控制</strong>：子代理现在固定只能用「列目录 / 搜索 / 读文件」三个工具，不会因为主程序新增了其它只读工具就悄悄扩权；启动、执行、取消与清理纳入统一的 5 分钟总预算，超时会返回已经探索到的部分结果而不是空手而归，收尾的中断与清理也拿得到独立的时间预算。委托探索本身不再被当成写操作记账，因此不会再占用写锁或触发「上一次写操作结果未知」的重试拦截。</li>
+<li><strong>修复设置里出现关不掉的 AI 工具开关</strong>：工具开关列表只显示真正可由用户启用/禁用的工具，不再列出「提问 / 更新待办 / 退出计划模式」这三个由运行时直接提供、开关不生效的内置工具。</li>
+<li><strong>修复提问卡片可能在回合被取消时丢失</strong>：AI 向你提问后若回合恰好在这一刻被取消，问题卡片现在仍会完整写入记录，刷新后依然能看到这条未回答的提问。</li>
+</ul>
+<h2 id="v0179-2026-07-24">v0.1.79 (2026-07-24)<a class="headerlink" href="#v0179-2026-07-24" title="Permanent link">&para;</a></h2>
+<h3 id="fixes_3">Fixes<a class="headerlink" href="#fixes_3" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>修复登录后重装 / 更新版本有时要重新登录才显示模型</strong>：当本机保存的登录令牌在冷启动时已过期，本地后端（信任本机模式）不会返回 401、前端因此不会自动刷新，但把过期令牌转发给云端拉取模型列表时被云端拒绝，导致模型列表为空、必须手动重新登录才恢复。现在启动时会先刷新过期令牌再拉取模型；令牌刷新成功后也会自动重拉模型列表；云端拉取失败时也会刷新令牌后重试——无需再手动重新登录。</li>
+</ul>
+<h2 id="v0178-2026-07-24">v0.1.78 (2026-07-24)<a class="headerlink" href="#v0178-2026-07-24" title="Permanent link">&para;</a></h2>
+<h3 id="fixes_4">Fixes<a class="headerlink" href="#fixes_4" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>修复打包版自定义模型「解密崩溃 → 不停重试 → 无法停止 → 重启也不行」</strong>：当本机加密密钥变动、导致已保存的自定义模型 API 密钥无法解密时，后端不再崩溃并连锁重试，而是明确提示「该模型的 API 密钥无法解密，请在设置里重新填写」；期间可正常切换模型、可停止回合。本机加密密钥在读取失败时不再被静默重新生成（那会孤儿化所有已存密钥）。AI 通道断开改为指数退避重连、多次失败后停手并给出「重试连接」按钮，不再固定 2 秒无限重连。</li>
+</ul>
+<h2 id="v0177-2026-07-24">v0.1.77 (2026-07-24)<a class="headerlink" href="#v0177-2026-07-24" title="Permanent link">&para;</a></h2>
+<h3 id="features_1">Features<a class="headerlink" href="#features_1" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Apple HIG 浅色主题</strong>:全局支持浅色 / 深色 / 跟随系统三种外观,可在设置里切换。编辑器(Monaco embai-light)、聊天代码块、工程可视化 SVG 等一并适配浅色;深色外观不受影响。</li>
+<li><strong>超级串口面板</strong>:面向 MCU 串口调试的数据可视化 —— 从串口原始字节流实时解析波形数据,内置常见串口波形协议(FireWater / JustFloat)与自动探测,提供波形图 / 数值 / 仪表 / LED / 按钮 / 滑杆等控件,可手动编排,也能让 AI 一句话按固件的串口输出自动生成整块面板。</li>
+</ul>
+<h2 id="v0175-2026-07-23">v0.1.75 (2026-07-23)<a class="headerlink" href="#v0175-2026-07-23" title="Permanent link">&para;</a></h2>
+<h3 id="fixes_5">Fixes<a class="headerlink" href="#fixes_5" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>修复打包版新用户登录偶发「登录票据兑换失败: The user aborted a request.」</strong>:AI 运行时(Codex 边车)启动移出后端启动关键路径,改为后台非致命启动 —— 一次瞬时抖动不再拖垮整个后端、连累登录与账户接口;后端与 /health 即刻可用,AI 侧后台自重试、失败也按需懒加载。登录票据兑换加退避重试 + 更长超时,兜住后端刚启动的窗口。Codex 异常退出时其真实原因(如状态库锁争用)现会写入后端日志便于诊断。</li>
+<li><strong>推理深度菜单列表限高可滚</strong>:选项过多时「超强」等不再被裁,菜单整体限高、可滚动。</li>
+</ul>
+<h2 id="v0174-2026-07-22">v0.1.74 (2026-07-22)<a class="headerlink" href="#v0174-2026-07-22" title="Permanent link">&para;</a></h2>
+<h3 id="fixes_6">Fixes<a class="headerlink" href="#fixes_6" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>内置 / GLM / 自定义模型不再弹「模型元数据未找到」运行时警告</strong>:AI 运行时发给 Codex 的查表用模型名统一改为目录内、支持工具、上下文上限更大的 slug(gpt-5.4);既保留工具下发、又消除每轮的 fallback 警告,长对话上下文(353k)也不再被截断。真实模型名仍在网关侧还原,路由与计费不变。</li>
+<li><strong>软件更新弹窗内容超长时可滚动</strong>:弹窗整体限高、中间内容区可滚动,「当前版本更新说明」等不再被裁到视口外。</li>
+</ul>
+<h2 id="v0173-2026-07-21">v0.1.73 (2026-07-21)<a class="headerlink" href="#v0173-2026-07-21" title="Permanent link">&para;</a></h2>
+<h3 id="fixes_7">Fixes<a class="headerlink" href="#fixes_7" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>修复内置模型「没有可用工具」</strong>:AI 运行时改为给 Codex 发送它能识别的模型名(内置云端模型名 gpt-5.6-luna/sol/terra 等此前不在 Codex 模型目录里,导致工具被整体丢弃、请求 tools=0),AI 重新能读文件、跑工具;真实模型名在网关侧还原,路由与计费不受影响。</li>
+<li><strong>修复自定义模型「保存 API 密钥失败(HTTP 500)」</strong>:桌面端为每台机器本地生成并注入加密密钥(此前发布版从不注入,导致加密报错),添加自己的模型不再 500。</li>
+</ul>
+<h2 id="v0172-2026-07-21">v0.1.72 (2026-07-21)<a class="headerlink" href="#v0172-2026-07-21" title="Permanent link">&para;</a></h2>
+<h3 id="fixes_8">Fixes<a class="headerlink" href="#fixes_8" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>多工具连续执行时面板不再闪烁</strong>:批间的轻思考行(「已思考 &lt;1s」)一封口就折入活动胶囊,不再先作为独立行露在外面、等下一个工具来了才收进折叠。</li>
+</ul>
+<h2 id="v0171-2026-07-21">v0.1.71 (2026-07-21)<a class="headerlink" href="#v0171-2026-07-21" title="Permanent link">&para;</a></h2>
+<h3 id="fixes_9">Fixes<a class="headerlink" href="#fixes_9" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>AI 运行时缺失时优雅回退</strong>:桌面开发版在打包用的 Codex 运行时尚未构建时,回退到 PATH 上的 codex,不再整轮在启动阶段就崩、导致内置与自建模型全部用不了。</li>
+<li>减弱动态(reduce-motion)偏好下 AI 面板的忙碌转圈不再冻住;工具执行中的图标改为真旋转。</li>
+</ul>
+<h2 id="v0170-2026-07-21">v0.1.70 (2026-07-21)<a class="headerlink" href="#v0170-2026-07-21" title="Permanent link">&para;</a></h2>
+<h3 id="features_2">Features<a class="headerlink" href="#features_2" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Plan 模式灯泡指示</strong>:composer 在 Plan 模式开启时显示灯泡标识,点击即可退出。</li>
+</ul>
+<h3 id="fixes_10">Fixes<a class="headerlink" href="#fixes_10" title="Permanent link">&para;</a></h3>
+<ul>
+<li>回合级消息行改为真实块盒,步骤间距不再被吞;步骤分界间隔挪到「已思考」上方。</li>
+</ul>
+<h2 id="v0169-2026-07-19">v0.1.69 (2026-07-19)<a class="headerlink" href="#v0169-2026-07-19" title="Permanent link">&para;</a></h2>
+<h3 id="features_3">Features<a class="headerlink" href="#features_3" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>AI 运行时切换到 Codex app-server</strong>:AI 助手底层从 LangChain 迁移到 Codex app-server 边车,回合更稳,工具调用与实时思考流式更贴近原生形态。</li>
+<li><strong>AI 面板重构</strong>:叙事流 + 活动行 + 回合摘要的原生形态,多轮对齐设计稿;任务支持重命名 / 置顶 / 归档,UI 名词统一为「任务」。</li>
+<li><strong>系统内置云端模型</strong>:开箱即用的内置云端模型(gpt-5.6 luna / sol / terra 等),额度不足时弹出充值卡。</li>
+<li><strong>环境信息面板</strong>:查看当前工作区与运行时等环境信息。</li>
+</ul>
+<h2 id="v0168-2026-07-15">v0.1.68 (2026-07-15)<a class="headerlink" href="#v0168-2026-07-15" title="Permanent link">&para;</a></h2>
+<h3 id="features_4">Features<a class="headerlink" href="#features_4" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>自动更新弹窗显示当前版本更新说明</strong>:打开「软件更新」弹窗即可看到当前运行版本的更新内容(changelog 随包分发、离线可用),不再只有检测到新版本时才有内容;有新版本时另外显示新版本的更新说明。更新说明改用 Markdown 渲染,标题 / 列表 / 引用结构清晰。</li>
+</ul>
+<h2 id="v0167-2026-07-15">v0.1.67 (2026-07-15)<a class="headerlink" href="#v0167-2026-07-15" title="Permanent link">&para;</a></h2>
+<h3 id="performance">Performance<a class="headerlink" href="#performance" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>冷启动渐进式可交互</strong>:启动壳 + 组件懒加载 + 启动状态机;后端重型服务(AI 运行时 / 知识库 / 符号索引)改懒初始化、AI 回合优先抢占,大项目启动更快、更早可操作。</li>
+</ul>
+<h3 id="fixes_11">Fixes<a class="headerlink" href="#fixes_11" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>AI 会话归属隔离</strong>:按用户严格隔离 AI 会话、切换用户彻底清理状态,防跨用户串话。</li>
+<li>AI 通道进 IDE 即连接 + 首帧入队,回访用户不再断连 / 丢消息。</li>
+<li>恢复 Monaco 编辑器的查找 / 跳转定义 / 折叠 / 悬停 / 补全等功能。</li>
+<li>切 / 开工程同步清符号索引,消除旧工程结果的 5 秒窗口;后端崩溃不再被误报成 degraded。</li>
+</ul>
+<h2 id="v0166-2026-07-15">v0.1.66 (2026-07-15)<a class="headerlink" href="#v0166-2026-07-15" title="Permanent link">&para;</a></h2>
+<h3 id="fixes_12">Fixes<a class="headerlink" href="#fixes_12" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>中断 AI 任务后立刻发新消息不再被旧任务吞并</strong>:取消当前轮后马上发的新消息会开一个干净的新回合,不会被上一轮残留的续跑逻辑并吞。</li>
+</ul>
+<h2 id="v0165-2026-07-15">v0.1.65 (2026-07-15)<a class="headerlink" href="#v0165-2026-07-15" title="Permanent link">&para;</a></h2>
+<h3 id="features_5">Features<a class="headerlink" href="#features_5" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>串口助手:AI / 手动 / 快捷发送的命令统一回显</strong>:AI 通过工具下发的串口命令现在也显示在串口助手里(带「AI」来源徽标),不再只看到设备回复、不知是什么命令触发的。</li>
+</ul>
+<h3 id="changes">Changes<a class="headerlink" href="#changes" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>串口助手对标通用串口助手的显示优化</strong>:TX / RX 双色方向标记、可开关的时间戳、HEX / ASCII 视图切换、UTF-8 / GBK 编码切换、长帧自动换行、RX / TX 字节计数;并改为串口连着就常连收集,切走标签也不丢数据。</li>
+</ul>
+<h2 id="v0164-2026-07-15">v0.1.64 (2026-07-15)<a class="headerlink" href="#v0164-2026-07-15" title="Permanent link">&para;</a></h2>
+<h3 id="fixes_13">Fixes<a class="headerlink" href="#fixes_13" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>待办执行完不再污染下一次任务</strong>:一轮任务的 todo 全部完成后,新任务不会带着上一轮的续跑上下文。</li>
+</ul>
+<h2 id="v0163-2026-07-15">v0.1.63 (2026-07-15)<a class="headerlink" href="#v0163-2026-07-15" title="Permanent link">&para;</a></h2>
+<h3 id="features_6">Features<a class="headerlink" href="#features_6" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>编辑器体验全面改进(PR #25)</strong>:tab 右键菜单 / 中键关闭 / 拖拽排序 / 关闭其他·右侧·全部、Alt+方向键前进后退导航、Ctrl+P 最近打开(独立 MRU 文件历史)、头文件 Ctrl+click 跳转、切换 tab 保存并恢复光标·滚动·折叠·选区、编辑器偏好面板(tab / 换行 / minimap 等)接通 Monaco。</li>
+<li><strong>文件外部变更自动同步</strong>:外部改动的文件按 tab 分发监听并自动刷新;非活跃的陈旧 tab 加琥珀色圆点提示;窗口重新聚焦时补刷。</li>
+</ul>
+<h3 id="fixes_14">Fixes<a class="headerlink" href="#fixes_14" title="Permanent link">&para;</a></h3>
+<ul>
+<li>保存失败 / 冲突不再关丢脏页;符号索引识别 Allman 风格(花括号换行)的函数定义、不再把调用点当成定义;<code>/file/save</code> 补齐 mtime + size 指纹。</li>
+</ul>
+<h2 id="v0162-2026-07-15">v0.1.62 (2026-07-15)<a class="headerlink" href="#v0162-2026-07-15" title="Permanent link">&para;</a></h2>
+<h3 id="fixes_15">Fixes<a class="headerlink" href="#fixes_15" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>打开串口不再复位下位机</strong>:开串口默认不脉冲 DTR / RTS(不复位接了自动下载电路的板子);波特率下拉适配全套常用档位。</li>
+</ul>
+<h2 id="v0161-2026-07-15">v0.1.61 (2026-07-15)<a class="headerlink" href="#v0161-2026-07-15" title="Permanent link">&para;</a></h2>
+<h3 id="features_7">Features<a class="headerlink" href="#features_7" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>AI 执行出错自动重试最多 5 次</strong>:空流 / 断连 / 超时等瞬时错误自动退避重试(轻量「重试 n/5」提示),耗尽才报错;手动「重试」改为接着中断处续跑、保留已完成进度,不再从头重来。</li>
+</ul>
+<h2 id="v0160-2026-07-15">v0.1.60 (2026-07-15)<a class="headerlink" href="#v0160-2026-07-15" title="Permanent link">&para;</a></h2>
+<h3 id="fixes_16">Fixes<a class="headerlink" href="#fixes_16" title="Permanent link">&para;</a></h3>
+<ul>
+<li>冷缓存不再把已选的云端模型重置成默认;修复切换模型后上下文窗口几秒后又翻回旧值。</li>
+</ul>
+<h2 id="v0159-2026-07-14">v0.1.59 (2026-07-14)<a class="headerlink" href="#v0159-2026-07-14" title="Permanent link">&para;</a></h2>
+<h3 id="fixes_17">Fixes<a class="headerlink" href="#fixes_17" title="Permanent link">&para;</a></h3>
+<ul>
+<li>修复自动续跑 stall-guard 的相对导入错误(attempted relative import beyond top-level package)。</li>
+</ul>
+<h2 id="v0158-2026-07-14">v0.1.58 (2026-07-14)<a class="headerlink" href="#v0158-2026-07-14" title="Permanent link">&para;</a></h2>
+<h3 id="fixes_18">Fixes<a class="headerlink" href="#fixes_18" title="Permanent link">&para;</a></h3>
+<ul>
+<li>AI 面板工具卡片改为边执行边折叠,消除单条闪现与尾部悬空。</li>
+</ul>
+<h2 id="v0157-2026-07-14">v0.1.57 (2026-07-14)<a class="headerlink" href="#v0157-2026-07-14" title="Permanent link">&para;</a></h2>
+<h3 id="features_8">Features<a class="headerlink" href="#features_8" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>适配 gpt-5.6(luna / sol / terra)</strong>:上下文窗口 353k。</li>
+</ul>
+<h3 id="fixes_19">Fixes<a class="headerlink" href="#fixes_19" title="Permanent link">&para;</a></h3>
+<ul>
+<li>access token 到期前主动刷新(按 exp 自适应),减少登录态过期导致的中断。</li>
+<li>自动续跑对齐 ReAct 范式:移除 verify_done 事后裁判、收紧 stall guard,减少无谓的空转续跑。</li>
+</ul>
+<h2 id="v0156-2026-07-14">v0.1.56 (2026-07-14)<a class="headerlink" href="#v0156-2026-07-14" title="Permanent link">&para;</a></h2>
+<h3 id="features_9">Features<a class="headerlink" href="#features_9" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>登录页只留浏览器登录</strong>:打包 / dev 默认指向控制台;启动时自动回收本仓库的僵尸后端端口。</li>
+</ul>
+<h3 id="fixes_20">Fixes<a class="headerlink" href="#fixes_20" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>AI 助手安全加固(阶段一)</strong>:阻断宿主命令执行 / 跨站 / 越界写等风险。</li>
+<li>内部工具会话与「系统续跑」消息不再泄漏进可见聊天。</li>
+<li>云端默认模型的显示与实际发送保持一致(未定价模型自动回退到已定价模型)。</li>
+</ul>
+<h2 id="v0155-2026-07-13">v0.1.55 (2026-07-13)<a class="headerlink" href="#v0155-2026-07-13" title="Permanent link">&para;</a></h2>
+<h3 id="features_10">Features<a class="headerlink" href="#features_10" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>账户系统对接 + 桌面「账户」设置页</strong>:浏览器 OAuth 登录经自托管服务换票深链回桌面;设置里新增账户页,展示身份、档位、双桶余额(月度赠送 / 充值)、本月用量与按模型分布,可一键退出。</li>
+<li><strong>积分制配额全端适配</strong>:内置可调用模型改为从云端拉取「已定价」列表(登录即预热);云端额度受限时给出结构化友好提示(余额不足 / 限流 / 账号停用 / 模型未定价 / 无可用渠道 / 额度用尽 / 无权模型),并附「充值 / 重试 / 切换模型 / 查看账户」快捷操作。</li>
+</ul>
+<h3 id="changes_1">Changes<a class="headerlink" href="#changes_1" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>上下文用量统计改为全本地计算</strong>:移除对 Anthropic 云端 token 计数接口的依赖,去掉「⚠️ / 含摘要」标记,统计更快且离线可用。</li>
+<li><strong>License 许可证子系统下线</strong>:配额与权限统一由云端账户 / 积分体系管理,移除本地许可证输入、校验与关于框相关入口。</li>
+</ul>
+<blockquote>
+<p>说明:本版合并了 0.1.51–0.1.54 期间的桌面端增量(上次公开发布为 0.1.50)。控制台(embai.xiaoxai.com)另按其自有版本号(console 0.1.54)单独发布。</p>
+</blockquote>
+<h2 id="v0150-2026-07-09">v0.1.50 (2026-07-09)<a class="headerlink" href="#v0150-2026-07-09" title="Permanent link">&para;</a></h2>
+<h3 id="features_11">Features<a class="headerlink" href="#features_11" title="Permanent link">&para;</a></h3>
+<ul>
+<li>开发版 Electron 支持<strong>真实 OAuth 登录</strong>:<code>run-electron-real.bat</code>(即 <code>run-electron.ps1 -RealAuth</code>)自动读取 release-config 的 <code>EMBAI_AUTH_URL</code> 并启用 <code>EMBAI_TRUST_LOCAL</code>,GitHub / Google 登录跳系统浏览器走真实授权;默认 mock 流程不变。</li>
+</ul>
+<h3 id="fixes_21">Fixes<a class="headerlink" href="#fixes_21" title="Permanent link">&para;</a></h3>
+<ul>
+<li>OAuth 登录用户<strong>修改显示名不再失效</strong>:后端 <code>update_profile</code> 先按登录态种子写入 user_cache 再更新,改名立即生效且持久。</li>
+<li>修复项目选择页点用户名<strong>黑屏崩溃</strong>:资料面板对缺失的 <code>license_tier</code> / <code>id</code> / <code>auth_provider</code> 字段全部加兜底,userStore 对后端返回的用户对象统一归一化。</li>
+<li>搜索面板在侧栏<strong>缩到最窄时不再溢出</strong>:搜索 / 替换行支持换行,选项按钮组整体换到第二行。</li>
+</ul>
+<h3 id="changes_2">Changes<a class="headerlink" href="#changes_2" title="Permanent link">&para;</a></h3>
+<ul>
+<li>更换新版应用 logo 与图标(窗口图标、安装包图标、关于框)。</li>
+<li>移除<strong>测试运行器</strong>功能(工具栏「运行测试 / 停止」按钮、文件树「测试」页签、日志面板「测试结果」页签、<code>/test</code> 命令)与关于框的构建信息 / 许可证区块。</li>
+<li>移除 AI 面板顶部的「PLAN」阶段步进条横幅(Plan 模式功能不变:输入栏开关、方案审批卡、<code>/plan</code> 照常)。</li>
+</ul>
+<h2 id="v0149-2026-07-08">v0.1.49 (2026-07-08)<a class="headerlink" href="#v0149-2026-07-08" title="Permanent link">&para;</a></h2>
+<h3 id="changes_3">Changes<a class="headerlink" href="#changes_3" title="Permanent link">&para;</a></h3>
+<ul>
+<li>登录验证码邮件的发件人显示名改为「EmbAI Team」(收件人看到 <code>EmbAI Team &lt;发件邮箱&gt;</code>);可用 auth-server 的 <code>SMTP_FROM_NAME</code> 覆盖。属 auth-server 侧改动,需重建该服务生效。</li>
+</ul>
+<h2 id="v0148-2026-07-08">v0.1.48 (2026-07-08)<a class="headerlink" href="#v0148-2026-07-08" title="Permanent link">&para;</a></h2>
+<h3 id="features_12">Features<a class="headerlink" href="#features_12" title="Permanent link">&para;</a></h3>
+<ul>
+<li>新增<strong>微信扫码登录</strong>(微信开放平台网站应用),并把 GitHub / Google 登录从占位接成<strong>真实 OAuth</strong>:自托管 auth-server 作为 OAuth broker 完成授权码交换、按 UnionID / 邮箱建号、签发登录 JWT(回调统一走 <code>embai://</code> deep-link)。需在 auth-server 配好各家 client_id/secret + 公网 https 回调域后生效;未配置的登录方式点击会提示「未配置」,不影响邮箱验证码登录。</li>
+</ul>
+<h2 id="v0147-2026-07-08">v0.1.47 (2026-07-08)<a class="headerlink" href="#v0147-2026-07-08" title="Permanent link">&para;</a></h2>
+<h3 id="features_13">Features<a class="headerlink" href="#features_13" title="Permanent link">&para;</a></h3>
+<ul>
+<li>新增 <strong>Ctrl+P 快速打开文件</strong>(文件名模糊搜索)与<strong>项目级搜索 / 替换面板</strong>(Ctrl+Shift+F):内容搜索支持大小写 / 全字 / 正则 / glob 过滤,逐个或全部替换(带 mtime 乐观锁),参考 VSCode 实现;顺带修复了原搜索前后端格式不匹配、结果显示不出来的问题。</li>
+</ul>
+<h2 id="v0146-2026-07-07">v0.1.46 (2026-07-07)<a class="headerlink" href="#v0146-2026-07-07" title="Permanent link">&para;</a></h2>
+<h3 id="fixes_22">Fixes<a class="headerlink" href="#fixes_22" title="Permanent link">&para;</a></h3>
+<ul>
+<li>修复通知中心抽屉塌缩 / 内容重叠:通知列表改用 Portal 渲染到 <code>&lt;body&gt;</code>,不再受工具栏毛玻璃(backdrop-filter 会成为 fixed 定位的包含块)影响而被压成一条;同时移除已废弃的 NotificationPanel 死代码。</li>
+</ul>
+<h2 id="v0145-2026-07-07">v0.1.45 (2026-07-07)<a class="headerlink" href="#v0145-2026-07-07" title="Permanent link">&para;</a></h2>
+<h3 id="features_14">Features<a class="headerlink" href="#features_14" title="Permanent link">&para;</a></h3>
+<ul>
+<li>桌面版(Electron)支持 Ctrl +/- / Ctrl+0 缩放界面并记忆比例:缩放比例靠 Chromium 的 per-host 记忆自动持久化,重开窗口 / 重启自动恢复;浏览器端无缩放桥接时自动 no-op。(#22)</li>
+</ul>
+<h3 id="fixes_23">Fixes<a class="headerlink" href="#fixes_23" title="Permanent link">&para;</a></h3>
+<ul>
+<li>回退(RewindButton)的确认框改用应用内弹窗,替代原生 window.confirm:修复回退后聊天输入框短暂无法输入的问题。(#23)</li>
+</ul>
+<h2 id="v0144-2026-07-07">v0.1.44 (2026-07-07)<a class="headerlink" href="#v0144-2026-07-07" title="Permanent link">&para;</a></h2>
+<h3 id="features_15">Features<a class="headerlink" href="#features_15" title="Permanent link">&para;</a></h3>
+<ul>
+<li>AI 模型区分「系统内置」与「我的模型」:登录即用的内置模型与你自己添加的模型,在模型选择器和设置页分区显示、并存可切换;内置只读,自建可增删改。</li>
+</ul>
+<h3 id="fixes_24">Fixes<a class="headerlink" href="#fixes_24" title="Permanent link">&para;</a></h3>
+<ul>
+<li>通知 toast 去掉毛玻璃、改为实心卡片;错误通知也会在 8 秒后自动消失。</li>
+<li>通知铃铛常驻显示(不再因无历史而隐藏);打开通知中心时背景遮罩加深、更聚焦。</li>
+</ul>
+<h2 id="v0143-2026-07-07">v0.1.43 (2026-07-07)<a class="headerlink" href="#v0143-2026-07-07" title="Permanent link">&para;</a></h2>
+<h3 id="fixes_25">Fixes<a class="headerlink" href="#fixes_25" title="Permanent link">&para;</a></h3>
+<ul>
+<li>修复窄窗口下工具栏中文按钮逐字竖排:虚拟显示控制条、主工具栏、调试 / Git 面板的按钮标签不再竖排,放不下时横向滚动。</li>
+<li>更新提示更健壮:检查更新失败时不再显示原始报错串,改为简短中文提示(详细信息写入日志)。</li>
+<li>关于窗口的「网站 / GitHub / 反馈」链接改指公开仓库(EmbAI-Release)。</li>
+</ul>
+<h2 id="v0142-2026-07-06">v0.1.42 (2026-07-06)<a class="headerlink" href="#v0142-2026-07-06" title="Permanent link">&para;</a></h2>
+<h3 id="changes_4">Changes<a class="headerlink" href="#changes_4" title="Permanent link">&para;</a></h3>
+<ul>
+<li>移除「项目设置」弹窗(ProjectSettingsDialog),相关入口从工具栏去掉,界面精简。</li>
+</ul>
+<h2 id="v0141-2026-07-06">v0.1.41 (2026-07-06)<a class="headerlink" href="#v0141-2026-07-06" title="Permanent link">&para;</a></h2>
+<h3 id="fixes_26">Fixes<a class="headerlink" href="#fixes_26" title="Permanent link">&para;</a></h3>
+<ul>
+<li>安装大幅提速:不再内置编译工具链(arm-gcc + cmake,约 1.26GB / 1.6 万文件),安装包与安装时间显著缩小。需要在软件内编译固件的用户,自行安装 arm-gcc / cmake 到系统 PATH 即可(软件会自动查找)。</li>
+<li>更新弹窗的「更新内容」不再显示 HTML 标签,渲染为可读文本。</li>
+</ul>
+<h2 id="v0140-2026-07-06">v0.1.40 (2026-07-06)<a class="headerlink" href="#v0140-2026-07-06" title="Permanent link">&para;</a></h2>
+<h3 id="fixes_27">Fixes<a class="headerlink" href="#fixes_27" title="Permanent link">&para;</a></h3>
+<ul>
+<li>启动后不再显示后端终端窗口(冻结后端改为无窗口模式;日志仍写入 <code>backend.log</code>)</li>
+<li>后端调用的外部命令行工具(git / gcc / cmake / openocd 等)在 Windows 上不再闪出各自的控制台窗口</li>
+</ul>
+<h2 id="v0139-2026-07-06">v0.1.39 (2026-07-06)<a class="headerlink" href="#v0139-2026-07-06" title="Permanent link">&para;</a></h2>
+<p>首个可发给远程用户双击安装的自包含发布版 + 自动更新。</p>
+<h3 id="features_16">Features<a class="headerlink" href="#features_16" title="Permanent link">&para;</a></h3>
+<ul>
+<li>自包含安装包:后端 PyInstaller 冻结进包,测试机无需安装 Python</li>
+<li>真实账号登录(邮箱验证码),localhost 单用户 trust-local 模式,安装包不含共享密钥</li>
+<li>登录即用的默认 AI:走自托管云端代理,真 AI key 只在服务器、不进安装包;按用户月度 token + 每分钟速率计量/限流</li>
+<li>仍支持在 设置→AI 模型 自带 key 直连(覆盖默认)</li>
+<li>自托管云端服务 <code>auth-server/</code>(auth + AI 代理,一条 <code>docker compose up</code>)</li>
+<li>GitHub Releases 自动更新(electron-updater;公开 releases 仓,源码保持私有)</li>
+</ul>
+<h2 id="v010-2026-04-08">v0.1.0 (2026-04-08)<a class="headerlink" href="#v010-2026-04-08" title="Permanent link">&para;</a></h2>
+<p>Initial beta release.</p>
+<h3 id="features_17">Features<a class="headerlink" href="#features_17" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Full IDE with Monaco editor, file tree, multi-tab editing</li>
+<li>6-step project wizard (chip selection, firmware library, RTOS, peripherals, toolchain, confirmation)</li>
+<li>STM32 chip database covering 18 series</li>
+<li>Build system: CMake + GCC, Keil MDK, IAR EWARM</li>
+<li>Flash programming: J-Link, ST-Link, DAPLink, serial ISP</li>
+<li>Debug: breakpoints, watch, locals, memory, registers, call stack, disassembly</li>
+<li>AI Agent with 71 tools for autonomous code generation, debugging, and testing</li>
+<li>Visual configuration: pin configurator, clock tree, peripheral block diagram, DMA assignment, NVIC priority</li>
+<li>J-Link advanced: J-Scope, SystemView, power measurement, VCOM, remote server</li>
+<li>Trace: SWV, ITM, performance profiler, code coverage, exception trace</li>
+<li>Unity test framework with automated build-flash-test pipeline</li>
+<li>User authentication: email/OAuth login, API key management</li>
+<li>License system with HMAC-SHA256 validation</li>
+<li>Dark mode, Apple HIG design</li>
+<li>Windows/macOS/Linux support via Electron</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  回到页面顶部
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="页脚" >
+        
+          
+          <a href="../guide/account/" class="md-footer__link md-footer__link--prev" aria-label="上一页: 账户与积分">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                上一页
+              </span>
+              <div class="md-ellipsis">
+                账户与积分
+              </div>
+            </div>
+          </a>
+        
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.instant", "navigation.sections", "navigation.expand", "navigation.top", "navigation.tracking", "navigation.footer", "toc.follow", "search.suggest", "search.highlight", "content.code.copy"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+    
+  </body>
+</html>

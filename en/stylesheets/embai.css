@@ -1,0 +1,216 @@
+/* EmbAI 文档站品牌皮肤。
+ *
+ * 色值直接取自控制台的 design token（embai/console/web/tailwind.config.js），
+ * 改那边记得同步这里：
+ *   #141416 canvas / #1C1C1E panel / #26262A elevated / #2A2A2E line
+ *   #F5F5F7 fg / #AEAEB2 muted / #8E8E93 tx3
+ *   #0A84FF primary（hover #409CFF / ring #64A8FF）
+ *   渐变 linear-gradient(120deg,#0A84FF,#5856D6,#AF52DE)
+ *
+ * mkdocs.yml 里 palette 写的是 primary: custom / accent: custom —— Material 因此
+ * 只输出 data-md-color-primary="custom"，配色**全靠本文件**，删了会退成无样式的灰。
+ *
+ * ⚠️ 本文件要能进构建，publish-docs.ps1 的 staging 必须复制 stylesheets/ 目录
+ * （它原来只复制 .md 和 logo/）。
+ */
+
+:root {
+  --embai-blue: #0a84ff;
+  --embai-blue-hover: #409cff;
+  --embai-blue-ring: #64a8ff;
+  --embai-grad: linear-gradient(120deg, #0a84ff 0%, #5856d6 55%, #af52de 100%);
+
+  --md-text-font: "Noto Sans SC", -apple-system, "Segoe UI", "Microsoft YaHei",
+    "PingFang SC", "Noto Sans CJK SC", sans-serif;
+  --md-code-font: "JetBrains Mono", "Cascadia Mono", Consolas, "Courier New", monospace;
+}
+
+/* ── 深色（默认档）──────────────────────────────────────────────────────── */
+[data-md-color-scheme="slate"] {
+  --md-hue: 240;
+
+  /* 顶栏用面板色而不是品牌蓝：控制台的顶栏就是深色的，蓝色留给强调。 */
+  --md-primary-fg-color: #1c1c1e;
+  --md-primary-fg-color--light: #26262a;
+  --md-primary-fg-color--dark: #141416;
+  --md-primary-bg-color: #f5f5f7;
+  --md-primary-bg-color--light: #aeaeb2;
+
+  --md-accent-fg-color: var(--embai-blue);
+  --md-accent-fg-color--transparent: rgba(10, 132, 255, 0.1);
+  --md-accent-bg-color: #ffffff;
+  --md-accent-bg-color--light: rgba(255, 255, 255, 0.7);
+
+  --md-default-bg-color: #141416;
+  --md-default-fg-color: #f5f5f7;
+  --md-default-fg-color--light: #aeaeb2;
+  --md-default-fg-color--lighter: #8e8e93;
+  --md-default-fg-color--lightest: #2a2a2e;
+
+  --md-code-bg-color: #1c1c1e;
+  --md-code-fg-color: #e6e6ea;
+
+  --md-typeset-color: #f5f5f7;
+  --md-typeset-a-color: var(--embai-blue-hover);
+
+  --md-footer-bg-color: #1c1c1e;
+  --md-footer-bg-color--dark: #141416;
+}
+
+/* ── 浅色档：表面换白，主色不变 ─────────────────────────────────────────── */
+[data-md-color-scheme="default"] {
+  --md-primary-fg-color: #ffffff;
+  --md-primary-fg-color--light: #f5f5f7;
+  --md-primary-fg-color--dark: #e8e8ec;
+  --md-primary-bg-color: #141416;
+  --md-primary-bg-color--light: #6b6b70;
+
+  --md-accent-fg-color: var(--embai-blue);
+  --md-accent-fg-color--transparent: rgba(10, 132, 255, 0.1);
+
+  --md-typeset-a-color: #0a6fd8; /* 白底上 #0A84FF 对比度不足，压深一档 */
+
+  --md-footer-bg-color: #1c1c1e;
+  --md-footer-bg-color--dark: #141416;
+}
+
+/* 浅色档顶栏是白的，得补一条分隔线，否则和内容糊在一起 */
+[data-md-color-scheme="default"] .md-header {
+  border-bottom: 1px solid #e2e2e6;
+}
+
+.md-header {
+  box-shadow: none;
+}
+
+[data-md-color-scheme="slate"] .md-header {
+  border-bottom: 1px solid #2a2a2e;
+}
+
+/* ── 首页 hero ──────────────────────────────────────────────────────────── */
+/* 光斑用两枚 radial 叠加而不是 blur 滤镜 —— 与官网落地页 .hero-glow 同一做法，省 GPU。 */
+.embai-hero {
+  position: relative;
+  margin: -1rem -0.8rem 2.5rem;
+  padding: 3.5rem 1.5rem 3rem;
+  text-align: center;
+  overflow: hidden;
+  border-radius: 18px;
+}
+
+.embai-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(640px 420px at 22% 8%, rgba(10, 132, 255, 0.2), transparent 70%),
+    radial-gradient(560px 380px at 78% 18%, rgba(175, 82, 222, 0.14), transparent 70%),
+    radial-gradient(520px 360px at 50% 42%, rgba(88, 86, 214, 0.1), transparent 70%);
+}
+
+.embai-hero > * {
+  position: relative;
+}
+
+.md-typeset .embai-hero h1 {
+  margin: 0 0 0.6rem;
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+  background: var(--embai-grad);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* toc.permalink 会给每个标题挂一个 ¶，hero 上显得突兀 */
+.md-typeset .embai-hero h1 .headerlink {
+  display: none;
+}
+
+.embai-hero .embai-tagline {
+  margin: 0 auto 1.6rem;
+  max-width: 34rem;
+  font-size: 0.82rem;
+  color: var(--md-default-fg-color--light);
+}
+
+.embai-hero .embai-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+  justify-content: center;
+}
+
+/* 主 CTA 用品牌渐变，次 CTA 用描边 —— 和控制台的 .btn-grad / .btn-outline 对应 */
+.md-typeset .embai-hero .md-button {
+  border-radius: 10px;
+  border-width: 1px;
+}
+
+.md-typeset .embai-hero .md-button--primary {
+  background: var(--embai-grad);
+  border-color: transparent;
+  color: #fff;
+}
+
+.md-typeset .embai-hero .md-button--primary:hover {
+  opacity: 0.9;
+  background: var(--embai-grad);
+  color: #fff;
+}
+
+/* ── 功能卡片网格（attr_list + md_in_html 的 .grid.cards）─────────────────── */
+.md-typeset .grid.cards > ul > li {
+  border-radius: 14px;
+  border-color: var(--md-default-fg-color--lightest);
+  transition: border-color 0.2s, box-shadow 0.2s, transform 0.2s;
+}
+
+.md-typeset .grid.cards > ul > li:hover {
+  border-color: var(--embai-blue);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.35);
+  transform: translateY(-2px);
+}
+
+.md-typeset .grid.cards > ul > li > hr {
+  margin: 0.6rem 0;
+}
+
+/* ── 其余细节对齐品牌 ───────────────────────────────────────────────────── */
+.md-typeset h1,
+.md-typeset h2 {
+  font-weight: 700;
+  letter-spacing: -0.005em;
+}
+
+.md-typeset code {
+  border-radius: 6px;
+}
+
+.md-typeset pre > code,
+.md-typeset .highlight {
+  border-radius: 10px;
+}
+
+.md-typeset table:not([class]) {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* 截图统一给圆角和描边，免得白底图糊在深色页面上 */
+.md-typeset img[src*="images/"] {
+  border-radius: 10px;
+  border: 1px solid var(--md-default-fg-color--lightest);
+}
+
+.md-typeset .md-button {
+  border-radius: 10px;
+}
+
+/* 语言切换器在深色顶栏下的对比度 */
+[data-md-color-scheme="slate"] .md-select__inner {
+  background-color: #26262a;
+}
